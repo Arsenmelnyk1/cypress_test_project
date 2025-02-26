@@ -13,6 +13,11 @@ module.exports = {
         }
       })
     },
+    specPattern: [
+      'cypress/e2e/login-page.cy.js',
+      'cypress/e2e/message-broker.cy.js',
+      'cypress/e2e/crud.cy.js',
+    ],
   },
   chromeWebSecurity: false,
   video: true,

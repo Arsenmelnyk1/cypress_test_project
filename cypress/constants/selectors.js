@@ -1,5 +1,6 @@
 export const urls = {
   baseUrl: 'https://www.saucedemo.com/',
+  webhookUrl: 'https://webhook.site/eab70470-1eca-4540-b8ab-76f3a19f26d6',
 }
 
 export const loginPageSelectors = {

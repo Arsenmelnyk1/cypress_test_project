@@ -1,5 +1,5 @@
 import { errorMessages } from "../cypress/constants/error-messages";
-import { loginPageSelectors, urls } from "../cypress/constants/selectors";
+import { loginPageSelectors, urls } from "../cypress/constants/selectors.js";
 
 class LoginPage {
   visit() {

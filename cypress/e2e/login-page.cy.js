@@ -1,9 +1,21 @@
+import { loginPage } from '../constants/pages';
+
 describe(`Login Page`, () => {
   beforeEach(() => {
-    cy.visit('https://www.saucedemo.com/');
+    loginPage.visit();
   })
 
-  it.only('Verify User Log-in with valid data', () => {
-    cy.log('qwerty');
+  it('Verify User Login with valid data', () => {
+    loginPage.enterUserName('standard_user');
+    loginPage.enterPassword('secret_sauce');
+    loginPage.clickLoginButton();
+    cy.location('pathname').should('eq', '/inventory.html');
+  });
+
+  it(`Verify User Can't Login with invalid data`, () => {
+    loginPage.enterUserName('cypress-test');
+    loginPage.enterPassword('secret_sauce');
+    loginPage.clickLoginButton();
+    loginPage.errorMessage();
   });
 });

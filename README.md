@@ -63,3 +63,19 @@ npm install
 
 All Cypress tests and generate reports in the cypress/reports folder.
 The load test script located in cypress/e2e/load.js.
+
+## Rabic RabbitMQ API
+
+### Instruction how to run using Postman:
+
+1. Install Erlang.
+2. Install RabbitMQ server.
+3. Launch RabbitMQ CLI.
+4. Run command:
+
+```bash
+rabbitmq-plugins.bat enable rabbitmq_management.
+```
+
+5. Open Postman.
+6. Import `rabbitMQAPI.postman_collection` the collection and run.

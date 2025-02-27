@@ -1,6 +1,6 @@
 import { loginPage } from '../constants/pages';
 
-describe(`Login Page`, () => {
+describe(`Login Page Test`, () => {
   beforeEach(() => {
     loginPage.visit();
   })

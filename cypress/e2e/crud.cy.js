@@ -1,4 +1,4 @@
-describe('CRUD API', () => {
+describe('CRUD API Test', () => {
   let userId;
 
   it('Should create a new user', () => {

@@ -1,7 +1,6 @@
 import { urls } from "../constants/selectors";
 
-describe('Webhook Publish/Subscribe Test', () => {
-
+describe('Webhook Publish Test', () => {
   it('Should publish an event to Webhook.site', () => {
     // This test case imitates the subscribe functionality.
     cy.request({

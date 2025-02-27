@@ -8,4 +8,8 @@
 
 # local env files
 .env.local
+
+# reports
 cypress/reports/*
+cypress/videos/*
+cypress/screenshot/*
